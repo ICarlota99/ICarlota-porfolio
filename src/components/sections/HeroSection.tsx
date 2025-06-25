@@ -40,22 +40,22 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center text-center">
 
         <GradientText
-          className="max-w-4xl text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight"
+          className="max-w-4xl text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight hover:cursor-default"
           colors={ [ "#86EFAC", "#2DD4BF", "#3B82F6", "#86EFAC" ] }
         >
           <span className="block text-5xl">
             Hi, I'm Carlota!
           </span>
           <span className="block mt-10 font-bold">
-            I Build Modern & Intuitive
+            I Create Fast, Beautiful
           </span>
           <span className="block font-bold">
-            Web Experiences.
+            & Usable Websites
           </span>
         </GradientText>
 
         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed text-slate-300">
-          A passionate <strong className="font-semibold text-white">Web Developer</strong> based in Havana, dedicated to turning innovative ideas into beautiful, high-performance digital solutions.
+          A passionate <strong className="font-semibold text-white">Junior Web Developer</strong> from Havana City, dedicated to turning innovative ideas into beautiful, high-performance digital solutions.
         </p>
 
         <motion.div
@@ -109,14 +109,14 @@ export default function HeroSection() {
             <Button
               variant="ghost"
               size="icon"
-              className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors"
+              className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
               <img src={Github} alt="Github icon" className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
               <span className="sr-only">GitHub</span>
             </Button>
           </a>
           <a
-            href="#"
+            href="https://linkedin.com/in/icarlota99"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -124,7 +124,7 @@ export default function HeroSection() {
             <Button
               variant="ghost"
               size="icon"
-              className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors"
+              className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
               <img src={Linkedin} alt="Linkedin icon" className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
               <span className="sr-only">LinkedIn</span>
@@ -137,7 +137,7 @@ export default function HeroSection() {
             <Button
               variant="ghost"
               size="icon"
-              className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors"
+              className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
               <Mail className="h-5 w-5 sm:h-6 sm-w-6 text-gray-800" />
               <span className="sr-only">Email</span>
