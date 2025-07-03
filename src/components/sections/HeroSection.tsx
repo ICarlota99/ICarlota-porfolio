@@ -9,11 +9,11 @@ import {
 } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Mail } from "lucide-react";
-import Github from '@/assets/icons/github.svg';
-import Linkedin from '@/assets/icons/linkedin.svg';
+import GithubIcon from '@/assets/icons/github.svg?react';
+import LinkedinIcon from '@/assets/icons/linkedin.svg?react';
 import GradientText from "@/components/animations/GradientText";
 
-const COLORS_TOP = [ "#CE84CF", "#1E67C6", "#FF6B3E", "#7B5FFF", "#020617", "#CE84CF"];
+const COLORS_TOP = [ "#CE84CF", "#1E67C6", "#D26B33", "#7B5FFF", "#020617", "#CE84CF"];
 
 export default function HeroSection() {
   const color = useMotionValue(COLORS_TOP[ 0 ]);
@@ -27,7 +27,7 @@ export default function HeroSection() {
     });
   }, [ color ]);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(150% 150% at 50% 100%, #020617 50%, ${color})`;
 
   return (
     <motion.section
@@ -43,19 +43,20 @@ export default function HeroSection() {
           className="max-w-4xl text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight hover:cursor-default"
           colors={ [ "#86EFAC", "#2DD4BF", "#3B82F6", "#86EFAC" ] }
         >
-          <span className="block text-5xl">
-            Hi, I'm Carlota!
+          <span className="block text-2xl lg:text-5xl md:text-4xl">
+            Hey there - I'm Carlota
           </span>
           <span className="block mt-10 font-bold">
-            I Create Fast, Beautiful
+            I Craft Beautiful & Reliable
           </span>
           <span className="block font-bold">
-            & Usable Websites
+            Web Experiences
           </span>
         </GradientText>
 
         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed text-slate-300">
-          A passionate <strong className="font-semibold text-white">Junior Web Developer</strong> from Havana City, dedicated to turning innovative ideas into beautiful, high-performance digital solutions.
+          I'm a <strong className="font-semibold text-white">Junior Web Developer</strong> based in Havana City, 
+          blending clean code with bold ideas to create high-performance digital experiences that feel as good as they look.
         </p>
 
         <motion.div
@@ -89,7 +90,7 @@ export default function HeroSection() {
               }
             } }
           >
-            <a href="#contact">Contact me</a>
+            Contact me
           </Button>
 
         </motion.div>
@@ -105,13 +106,14 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
+            title="GitHub Profile"
           >
             <Button
               variant="ghost"
               size="icon"
               className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
-              <img src={Github} alt="Github icon" className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
+              <GithubIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" alt="Github icon"/>
               <span className="sr-only">GitHub</span>
             </Button>
           </a>
@@ -120,26 +122,28 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
+            title="Linkedin Profile"
           >
             <Button
               variant="ghost"
               size="icon"
               className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
-              <img src={Linkedin} alt="Linkedin icon" className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
+              <LinkedinIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" alt="Linkedin icon" />
               <span className="sr-only">LinkedIn</span>
             </Button>
           </a>
           <a
             href="mailto:icarlota99dev@gmail.com"
             aria-label="Send Email"
+            title="Send Email"
           >
             <Button
               variant="ghost"
               size="icon"
               className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
-              <Mail className="h-5 w-5 sm:h-6 sm-w-6 text-gray-800" />
+              <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
               <span className="sr-only">Email</span>
             </Button>
           </a>
