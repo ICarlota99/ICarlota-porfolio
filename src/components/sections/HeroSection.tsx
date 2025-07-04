@@ -13,7 +13,7 @@ import GithubIcon from '@/assets/icons/github.svg?react';
 import LinkedinIcon from '@/assets/icons/linkedin.svg?react';
 import GradientText from "@/components/animations/GradientText";
 
-const COLORS_TOP = [ "#CE84CF", "#1E67C6", "#D26B33", "#7B5FFF", "#020617", "#CE84CF"];
+const COLORS_TOP = [ "#FFB6C1", "#4A90E2", "#FF7F50", "#FF6B6B", "#7B5FFF", "#020617", "#FFB6C1"];
 
 export default function HeroSection() {
   const color = useMotionValue(COLORS_TOP[ 0 ]);
@@ -27,7 +27,7 @@ export default function HeroSection() {
     });
   }, [ color ]);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(150% 150% at 50% 100%, #020617 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(120% 120% at 50% 100%, #020617 50%, ${color})`;
 
   return (
     <motion.section
@@ -90,7 +90,7 @@ export default function HeroSection() {
               }
             } }
           >
-            Contact me
+            <a href="#">Download CV</a>
           </Button>
 
         </motion.div>
@@ -149,7 +149,6 @@ export default function HeroSection() {
           </a>
         </motion.div>
       </div>
-
       <div className="absolute inset-0 z-0">
         <Canvas>
           <Stars radius={ 50 } count={ 2500 } factor={ 4 } fade speed={ 2 } />
