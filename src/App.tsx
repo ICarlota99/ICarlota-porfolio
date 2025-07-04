@@ -1,3 +1,4 @@
+import StarsBG from "@/components/ui/StarsBG";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
@@ -11,6 +12,7 @@ import AboutSection from "@/components/sections/AboutSection";
 export default function HomePage() {
   return (
     <main className="bg-background text-foreground">
+      <StarsBG />
       <ScrollProgress />
       <Navbar />
       <HeroSection />

@@ -1,6 +1,4 @@
 import Image from "@/assets/pfp.png";
-import { Canvas } from "@react-three/fiber";
-import { Stars } from "@react-three/drei";
 import { motion, circOut } from "framer-motion";
 import { GlassmorphicCard } from "@/components/ui/GlassmorphicCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -13,7 +11,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="py-24 sm:py-32 relative bg-slate-950 text-white overflow-hidden">
+    <section id="about" className="py-24 sm:py-32 relative text-white overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-70 sm:opacity-100">
         <div className="absolute top-1/4 right-1/4 w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 sm:opacity-25 animate-blob animation-delay-4000"></div>
         <div className="absolute bottom-1/3 left-1/3 w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-20 sm:opacity-25 animate-blob"></div>
@@ -22,7 +20,7 @@ const AboutSection = () => {
       <div className="container relative z-10 mx-auto px-4">
         <SectionHeading title="About Me" subtitle="My Journey" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start md:items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start md:items-center">
           <motion.div
             className="relative"
             variants={ imageContainerVariants }
@@ -100,11 +98,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-        <div className="absolute inset-0 z-0">
-            <Canvas>
-                <Stars radius={ 50 } count={ 2500 } factor={ 4 } fade speed={ 2 } />
-            </Canvas>
-        </div>
     </section>
   );
 };
