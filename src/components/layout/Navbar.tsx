@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
 import { cn } from "@/utils/cn";
 
 interface NavItem {
@@ -65,16 +64,28 @@ export default function Navbar() {
   return (
     <nav
       className={ cn(
-        "fixed z-50 left-1/2 top-4 transform -translate-x-1/2",
-        "rounded-full px-6 py-2 bg-slate-900/80 shadow-lg backdrop-blur-xl border border-slate-700/60",
-        "transition-all duration-300 ease-in-out",
-        isScrolled && "bg-slate-900/90"
-      )}
+        "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ease-in-out",
+        "bg-slate-900/80",
+        (isScrolled || isOpen) &&
+        "bg-slate-900/90 backdrop-blur-xl shadow-lg border-b border-slate-700/60",
+        !(isScrolled || isOpen) &&
+        "border-b border-transparent"
+      ) }
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-10 sm:h-10">
+        <div className="flex items-center justify-between h-16 sm:h-20">
+          <div className="flex items-center">
+            <a
+              href="/#hero"
+              onClick={ (e) => handleLinkClick(e, "/#hero") }
+              className="text-2xl font-bold bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-600 bg-clip-text text-transparent"
+            >
+              Carlota
+            </a>
+          </div>
+
           {/* Desktop Menu */ }
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2">
             { navItems.map((item) => (
               <a
                 key={ item.label }
@@ -92,15 +103,29 @@ export default function Navbar() {
             )) }
           </div>
 
-          {/* Mobile Menu Button */ }
-          <div className="md:hidden flex items-center">
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex justify-end p-4">
             <button
-              onClick={ toggleMenu }
-              className="ml-2 inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-700/60 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500"
-              aria-expanded={ isOpen }
-              aria-label={ isOpen ? "Close menu" : "Open menu" }
+              onClick={toggleMenu}
+              className="relative inline-flex items-center justify-center w-12 h-12 rounded-full text-slate-300 hover:text-white hover:bg-slate-700/30 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              aria-expanded={isOpen}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              { isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" /> }
+              {/* Animated Hamburger Lines */}
+              <span className={`
+                absolute block w-6 h-0.5 bg-current rounded-full
+                transform transition duration-300
+                ${isOpen ? 
+                  "rotate-45 -translate-y-1/2" : 
+                  "-translate-y-1.5"}
+              `}></span>
+              <span className={`
+                absolute block w-6 h-0.5 bg-current rounded-full
+                transform transition duration-300
+                ${isOpen ? 
+                  "-rotate-45 -translate-y-1/2" : 
+                  "translate-y-1.5"}
+              `}></span>
             </button>
           </div>
         </div>
