@@ -8,7 +8,7 @@ import {
   animate,
 } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, FileText } from "lucide-react";
 import GithubIcon from '@/assets/icons/github.svg?react';
 import LinkedinIcon from '@/assets/icons/linkedin.svg?react';
 import GradientText from "@/components/animations/GradientText";
@@ -90,7 +90,9 @@ export default function HeroSection() {
               }
             } }
           >
-            <a href="#">Download CV</a>
+            <a href="#resume">
+              Check My CV <FileText className="ml-2 h-5 w-5"/>
+            </a>
           </Button>
 
         </motion.div>
