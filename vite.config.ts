@@ -4,7 +4,11 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/ICarlota-portfolio",
+  base: '/ICarlota-portfolio/',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true
+  },
   plugins: [
     react(),
     svgr({ 
