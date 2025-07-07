@@ -1,27 +1,31 @@
-import StarsBG from "@/components/ui/StarsBG";
+// import StarsBG from "@/components/ui/StarsBG";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import ScrollToTopButton from "./components/ui/ScrollToTopButton";
+import SplashCursor from "./components/ui/SplashCursor";
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
-// import CareerGoalsSection from "@/components/sections/CareerGoalsSection";
 // import ProjectsSection from "@/components/sections/ProjectsSection";
 // import TechStackSection from "@/components/sections/TechStackSection";
-// import ResumeSection from "@/components/sections/ResumeSection";
-// import ContactSection from "@/components/sections/ContactSection";
+import ResumeSection from "@/components/sections/ResumeSection";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/layout/Footer";
 
 export default function HomePage() {
   return (
     <main className="bg-background text-foreground">
-      <StarsBG />
+      {/* <StarsBG /> */}
       <ScrollProgress />
+      <ScrollToTopButton />
+      <SplashCursor />
       <Navbar />
       <HeroSection />
       <AboutSection />
-      {/* <CareerGoalsSection /> */}
       {/* <ProjectsSection /> */}
       {/* <TechStackSection /> */}
-      {/* <ResumeSection /> */}
-      {/* <ContactSection /> */}
+      <ResumeSection />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }
