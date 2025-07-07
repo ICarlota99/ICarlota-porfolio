@@ -1,5 +1,3 @@
-import { Canvas } from "@react-three/fiber";
-import { Stars } from "@react-three/drei";
 import { useEffect } from "react";
 import {
   useMotionTemplate,
@@ -35,7 +33,7 @@ export default function HeroSection() {
       style={ {
         backgroundImage,
       } }
-      className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-foreground"
+      className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-foreground -z-50"
     >
       <div className="relative z-10 flex flex-col items-center text-center">
 
@@ -150,11 +148,6 @@ export default function HeroSection() {
             </Button>
           </a>
         </motion.div>
-      </div>
-      <div className="absolute inset-0 z-0">
-        <Canvas>
-            <Stars radius={50} count={1000} factor={4} fade speed={2} />
-        </Canvas>
       </div>
     </motion.section>
   );
