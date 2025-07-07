@@ -1,4 +1,4 @@
-import Image from "@/assets/pfp.png";
+import Image from "@/assets/pfp.webp";
 import { motion, circOut } from "framer-motion";
 import { GlassmorphicCard } from "@/components/ui/GlassmorphicCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
