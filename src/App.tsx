@@ -1,4 +1,4 @@
-import StarsBG from "@/components/ui/StarsBG";
+import StarsBG from "@/components/animations/StarsBG";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 import SplashCursor from "./components/animations/SplashCursor";

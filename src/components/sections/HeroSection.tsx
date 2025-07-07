@@ -115,7 +115,7 @@ export default function HeroSection() {
               size="icon"
               className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
-              <GithubIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" alt="Github icon"/>
+              <GithubIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800"/>
               <span className="sr-only">GitHub</span>
             </Button>
           </a>
@@ -131,7 +131,7 @@ export default function HeroSection() {
               size="icon"
               className="p-2.5 sm:p-3 rounded-full shadow-lg bg-gray-200/90 hover:bg-gray-100 transition-colors cursor-pointer"
             >
-              <LinkedinIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" alt="Linkedin icon" />
+              <LinkedinIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
               <span className="sr-only">LinkedIn</span>
             </Button>
           </a>
