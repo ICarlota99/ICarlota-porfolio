@@ -1,7 +1,7 @@
 // import StarsBG from "@/components/ui/StarsBG";
-import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import ScrollToTopButton from "./components/ui/ScrollToTopButton";
-import SplashCursor from "./components/ui/SplashCursor";
+import SplashCursor from "./components/animations/SplashCursor";
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
