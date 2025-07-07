@@ -1,4 +1,4 @@
-// import StarsBG from "@/components/ui/StarsBG";
+import StarsBG from "@/components/ui/StarsBG";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 import SplashCursor from "./components/animations/SplashCursor";
@@ -14,7 +14,7 @@ import Footer from "@/components/layout/Footer";
 export default function HomePage() {
   return (
     <main className="bg-background text-foreground">
-      {/* <StarsBG /> */}
+      <StarsBG />
       <ScrollProgress />
       <ScrollToTopButton />
       <SplashCursor />
