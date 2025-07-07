@@ -4,10 +4,19 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/ICarlota-portfolio/',
+  base: '/ICarlota-portfolio',
   build: {
     outDir: 'dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Group dependencies into separate chunks
+          react: ['react'],
+          animations: ['framer-motion', '@react-three/drei', '@react-three/fiber'],
+        },
+      },
+    },
   },
   plugins: [
     react(),
