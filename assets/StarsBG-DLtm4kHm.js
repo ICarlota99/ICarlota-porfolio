@@ -1,0 +1,1 @@
+import{j as s,c as r}from"./canvas-D_mlcMn1.js";import{S as t}from"./stars-C7pO5KSS.js";import"./react-9Ra4Lmds.js";function o(){return s.jsx("div",{className:"fixed inset-0 -z-10",children:s.jsx(r,{children:s.jsx(t,{radius:50,count:400,factor:3,fade:!0,speed:2})})})}export{o as default};
