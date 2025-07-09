@@ -43,7 +43,7 @@ export default function Footer() {
                     <li key={ item }>
                       <a
                         href={ `#${item.toLowerCase()}` }
-                        className="text-gray-600 hover:text-blue-400 transition-colors"
+                        className="text-gray-400 hover:text-blue-400 transition-colors"
                       >
                         { item }
                       </a>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <li key={ item }>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-blue-400 transition-colors"
+                    className="text-gray-400 hover:text-blue-400 transition-colors"
                   >
                     { item }
                   </a>
@@ -75,13 +75,13 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-2">
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
                 <Mail className="h-4 w-4 mr-2" /> k431999@gmail.com
               </li>
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
                 <GithubIcon className="h-4 w-4 mr-2" /> github.com/icarlota99
               </li>
-              <li className="flex items-center text-gray-600 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
                 <LinkedinIcon className="h-4 w-4 mr-2" /> linkedin.com/in/icarlota99
               </li>
             </ul>
@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-          <p className="text-gray-600 dark:text-gray-400 text-sm">
+          <p className="text-gray-400 dark:text-gray-400 text-sm">
             Made with love by © { new Date().getFullYear() } ICarlota. All rights reserved.
           </p>
         </div>

@@ -28,35 +28,35 @@ const skillCategories = [
   {
     title: "Frontend Development",
     skills: [
-      { name: "ReactJS", icon: <FaReact className="h-8 w-8 text-[#61DAFB]" /> },
-      { name: "Next.js", icon: <SiNextdotjs className="h-8 w-8" /> },
-      { name: "TypeScript", icon: <SiTypescript className="h-8 w-8 text-[#3178C6]" /> },
-      { name: "HTML5", icon: <FaHtml5 className="h-8 w-8 text-[#E34F26]" /> },
-      { name: "CSS3", icon: <FaCss3Alt className="h-8 w-8 text-[#1572B6]" /> },
-      { name: "JavaScript (ES6+)", icon: <SiJavascript className="h-8 w-8 text-[#F7DF1E]" /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="h-8 w-8 text-[#06B6D4]" /> },
-      { name: "Bootstrap", icon: <SiBootstrap className="h-8 w-8 text-[#6E36ED]" /> },
+      { name: "React.js", icon: <FaReact className="h-8 w-8 text-[#61DAFB]" aria-label="ReactJS icon"/> },
+      { name: "Next.js", icon: <SiNextdotjs className="h-8 w-8" aria-label="NextJS icon" /> },
+      { name: "TypeScript", icon: <SiTypescript className="h-8 w-8 text-[#3178C6]" aria-label="Typescript icon" /> },
+      { name: "HTML5", icon: <FaHtml5 className="h-8 w-8 text-[#E34F26]" aria-label="HTML5 icon" /> },
+      { name: "CSS3", icon: <FaCss3Alt className="h-8 w-8 text-[#1572B6]" aria-label="CSS3 icon" /> },
+      { name: "JavaScript (ES6+)", icon: <SiJavascript className="h-8 w-8 text-[#F7DF1E]" aria-label="Javascript icon" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss className="h-8 w-8 text-[#06B6D4]" aria-label="Tailwind css icon" /> },
+      { name: "Bootstrap", icon: <SiBootstrap className="h-8 w-8 text-[#6E36ED]" aria-label="Bootstrap icon" /> },
     ]
   },
   {
     title: "Backend & Database",
     skills: [
-      { name: "Node.js", icon: <FaNodeJs className="h-8 w-8 text-[#339933]" /> },
-      { name: "Express.js", icon: <SiExpress className="h-8 w-8 text-slate-200" /> },
-      { name: "Python", icon: <FaPython className="h-8 w-8 text-[#3776AB]" /> },
-      { name: "Flask", icon: <img src={Flask} className="h-8 w-8 text-[#A1D0E2]" /> },
-      { name: "MySQL", icon: <SiMysql className="h-10 w-10 text-[#06B6D4]" /> },
-      { name: "SqlAlchemy", icon: <SiSqlalchemy className="h-10 w-10 text-cyan-200" /> },
+      { name: "Node.js", icon: <FaNodeJs className="h-8 w-8 text-[#339933]" aria-label="NodeJS icon" /> },
+      { name: "Express.js", icon: <SiExpress className="h-8 w-8 text-slate-200" aria-label="ExpressJS icon" /> },
+      { name: "Python", icon: <FaPython className="h-8 w-8 text-[#3776AB]" aria-label="Python icon" /> },
+      { name: "Flask", icon: <img src={Flask} className="h-8 w-8 text-[#A1D0E2]" loading="lazy" alt="flask icon" /> },
+      { name: "MySQL", icon: <SiMysql className="h-10 w-10 text-[#06B6D4]" aria-label="MySQL icon" /> },
+      { name: "SqlAlchemy", icon: <SiSqlalchemy className="h-10 w-10 text-cyan-200" aria-label="SqlAlchemy icon" /> },
 
     ]
   },
   {
     title: "Tools & Methodologies",
     skills: [
-      { name: "Git", icon: <FaGitAlt className="h-8 w-8 text-[#F05032]" /> },
-      { name: "VS Code", icon: <VscVscodeInsiders className="h-8 w-8 text-[#3178C6]" /> },
-      { name: "RESTful APIs", icon: <TbApi className="h-10 w-10 text-blue-200" /> },
-      { name: "Responsive Design", icon: <MdOutlineImportantDevices className="h-8 w-8 text-rose-400" /> },
+      { name: "Git", icon: <FaGitAlt className="h-8 w-8 text-[#F05032]" aria-label="Git icon" /> },
+      { name: "VS Code", icon: <VscVscodeInsiders className="h-8 w-8 text-[#3178C6]" aria-label="VS Code icon" /> },
+      { name: "RESTful APIs", icon: <TbApi className="h-10 w-10 text-blue-200" aria-label="Restful apis icon" /> },
+      { name: "Responsive Design", icon: <MdOutlineImportantDevices className="h-8 w-8 text-rose-400" aria-label="Responsive design icon" /> },
     //   { name: "Figma", icon: <FaFigma className="h-8 w-8 text-[#F24E1E]" /> },
     //   { name: "Docker", icon: <FaDocker className="h-8 w-8 text-sky-400" /> },
     ]
