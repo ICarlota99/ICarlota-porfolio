@@ -13,7 +13,9 @@ export default defineConfig({
         manualChunks: {
           // Group dependencies into separate chunks
           react: ['react'],
-          animations: ['framer-motion', '@react-three/drei', '@react-three/fiber'],
+          canvas: ['@react-three/fiber'],
+          framer_motion: ['framer-motion'],
+          stars: ['@react-three/drei'],
         },
       },
     },
