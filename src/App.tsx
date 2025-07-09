@@ -14,7 +14,6 @@ import Footer from "@/components/layout/Footer";
 export default function HomePage() {
   return (
     <main className="bg-background text-foreground">
-      <StarsBG />
       <ScrollProgress />
       <ScrollToTopButton />
       <SplashCursor />
@@ -26,6 +25,7 @@ export default function HomePage() {
       <ResumeSection />
       <ContactSection />
       <Footer />
+      <StarsBG />
     </main>
   );
 }
