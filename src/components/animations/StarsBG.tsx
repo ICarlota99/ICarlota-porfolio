@@ -1,12 +1,11 @@
-import { Canvas } from "@react-three/fiber";
-import { Stars } from "@react-three/drei";
+import { lazy, Suspense } from "react";
+
+const StarsCanvas = lazy(() => import("./StarsCanvas"));
 
 export default function StarsBG() {
-    return(
-        <div className="fixed inset-0 -z-10">
-            <Canvas>
-                <Stars radius={50} count={400} factor={3} fade speed={2} />
-            </Canvas>
-        </div>
-    );
-};
+  return (
+    <Suspense fallback={<div className="fixed inset-0 -z-10 bg-background" />}>
+      <StarsCanvas />
+    </Suspense>
+  );
+}
