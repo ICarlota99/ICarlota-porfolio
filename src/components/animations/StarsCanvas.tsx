@@ -8,7 +8,7 @@ export default function StarsCanvas() {
         frameloop="demand"
         gl={{ powerPreference: "low-power", antialias: false }}
       >
-        <Stars radius={50} count={300} factor={3} fade speed={1.5} />
+        <Stars radius={50} count={250} factor={4} fade speed={1.5} />
       </Canvas>
     </div>
   );
