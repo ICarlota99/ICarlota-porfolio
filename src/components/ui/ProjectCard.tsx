@@ -107,7 +107,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 onClick={ handleButtonClick }
                 className="flex-1 text-center sm:text-left inline-flex items-center justify-center sm:justify-start gap-2 bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white font-medium py-2 px-4 rounded-lg text-sm transform active:scale-95 transition-all duration-150 ease-in-out"
               >
-                <GithubIcon className="w-16 h-16" />
+                <GithubIcon className="w-4 h-4" />
                 View Code
               </a>
             ) }
@@ -120,7 +120,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 className="flex-1 sm:text-left inline-flex items-center justify-center sm:justify-start gap-2 rounded-lg text-sm py-2 px-4 text-center font-medium text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 transform active:scale-95 transition-all duration-150 ease-in-out"
               >
                 <Link size={ 14 } />
-                Live Demo
+                Check Demo
               </a>
             ) }
           </div>

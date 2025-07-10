@@ -62,12 +62,12 @@ const AboutSection = () => {
               </p>
               <p className="text-lg text-zinc-300 mt-4 leading-relaxed lg:text-justify">
                 A rapid and independent learner, I master new technologies through deep 
-                documentation dives. While I have a diverse 
-                <a href="#skills" className="underline font-semibold text-white italic">toolkit</a>, 
+                documentation dives. While I have a diverse <a href="#skills" 
+                className="underline font-semibold text-white italic">toolkit</a>, 
                 I specialize in crafting performant frontends with 
-                <strong className="font-semibold text-white">React/Nest.js</strong> and efficient 
+                <strong className="font-semibold text-white"> React</strong> and efficient 
                 backends with <strong className="font-semibold text-white">Python & Node.js</strong>. 
-                I'm also exploring <strong className="font-semibold text-white">LLMs</strong> 
+                I'm also exploring <strong className="font-semibold text-white">LLMs </strong> 
                 and <strong className="font-semibold text-white">AI</strong> to enhance web applications.
               </p>
               <p className="text-lg text-zinc-300 mt-4 leading-relaxed lg:text-justify">
