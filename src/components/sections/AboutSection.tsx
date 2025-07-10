@@ -34,6 +34,7 @@ const AboutSection = () => {
                 src={ Image }
                 alt="Irene Carlota - Web Developer"
                 className="transform transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
               <div className="absolute bottom-0 left-0 w-full p-4 sm:p-6">
