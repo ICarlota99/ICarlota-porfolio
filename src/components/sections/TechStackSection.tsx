@@ -65,7 +65,7 @@ const skillCategories = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-24 sm:py-32 relative bg-slate-950 overflow-hidden">
+    <section id="skills" className="py-24 sm:py-32 relative -z-10 bg-slate-950 overflow-hidden">
       {/* Simplified animated blobs */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 left-1/4 w-60 h-60 sm:w-80 sm:h-80 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full mix-blend-screen blur-2xl opacity-15" />
