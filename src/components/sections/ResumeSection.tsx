@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { GlassmorphicCard } from "../ui/GlassmorphicCard";
 
-const resumeLink = "https://icarlota99.github.io/ICarlota-portfolio/ICarlota_dev_CV.pdf";
+const resumeLink = `${import.meta.env.BASE_URL}/ICarlota_dev_CV.pdf`;
 const resumeFilename = "ICarlota_dev_CV.pdf";
 
 export default function ResumeSection() {
