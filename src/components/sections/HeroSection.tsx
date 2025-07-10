@@ -32,13 +32,13 @@ export default function HeroSection() {
       {/* Animated background behind all content */}
       <motion.div
         style={{ backgroundImage }}
-        className="fixed inset-0 -z-50"
+        className="absolute inset-0 -z-50"
         aria-hidden
       />
 
       <section
         id="hero"
-        className="relative z-50 min-h-screen grid place-content-center px-4 py-24 text-foreground"
+        className="relative z-0 min-h-screen grid place-content-center px-4 py-24 text-foreground"
       >
         <div className="flex flex-col items-center text-center">
 
