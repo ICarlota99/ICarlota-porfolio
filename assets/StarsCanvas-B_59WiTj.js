@@ -1,0 +1,1 @@
+import{j as a,b as e}from"./canvas-Dl1d5U4b.js";import{S as r}from"./stars-B4GAPXDW.js";import"./react-9Ra4Lmds.js";function i(){return a.jsx("div",{className:"fixed inset-0 -z-10",children:a.jsx(e,{frameloop:"demand",gl:{powerPreference:"low-power",antialias:!1},children:a.jsx(r,{radius:50,count:300,factor:3,fade:!0,speed:1.5})})})}export{i as default};
