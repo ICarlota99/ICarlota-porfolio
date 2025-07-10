@@ -28,97 +28,105 @@ export default function HeroSection() {
   const backgroundImage = useMotionTemplate`radial-gradient(120% 120% at 50% 100%, #020617 50%, ${color})`;
 
   return (
-    <motion.section
-      id="hero"
-      style={{ backgroundImage }}
-      className="relative min-h-screen grid place-content-center px-4 py-24 text-foreground"
-    >
-      <div className="relative z-10 flex flex-col items-center text-center">
+    <>
+      {/* Animated background behind all content */}
+      <motion.div
+        style={{ backgroundImage }}
+        className="fixed inset-0 -z-50"
+        aria-hidden
+      />
 
-        {/* Heading */}
-        <GradientText
-          className="max-w-4xl text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight hover:cursor-default"
-          colors={["#86EFAC", "#2DD4BF", "#3B82F6", "#86EFAC"]}
-        >
-          <span className="block text-2xl md:text-4xl lg:text-5xl">Hey there — I'm Carlota</span>
-          <span className="block mt-10 font-bold">I Craft Beautiful & Reliable</span>
-          <span className="block font-bold">Web Experiences</span>
-        </GradientText>
+      <section
+        id="hero"
+        className="relative z-50 min-h-screen grid place-content-center px-4 py-24 text-foreground"
+      >
+        <div className="flex flex-col items-center text-center">
 
-        {/* Description */}
-        <p className="my-6 max-w-xl text-base md:text-lg text-slate-300 leading-relaxed">
-          I'm a <strong className="font-semibold text-white">Junior Web Developer</strong> based in Havana City,
-          blending clean code with bold ideas to create high-performance digital experiences that feel as good as they look.
-        </p>
-
-        {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
-        >
-          <Button
-            asChild
-            size="lg"
-            className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 text-lg px-6 py-3"
-            onClick={ (e) => {
-              e.preventDefault();
-              const contactSection = document.querySelector("#projects");
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            } }
+          {/* Heading */}
+          <GradientText
+            className="max-w-4xl text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight leading-tight hover:cursor-default"
+            colors={["#86EFAC", "#2DD4BF", "#3B82F6", "#86EFAC"]}
           >
-            <a href="#projects" className="flex items-center">
-              View Projects <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-          </Button>
+            <span className="block text-2xl md:text-4xl lg:text-5xl">Hey there — I'm Carlota</span>
+            <span className="block mt-10 font-bold">I Craft Beautiful & Reliable</span>
+            <span className="block font-bold">Web Experiences</span>
+          </GradientText>
 
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="bg-transparent text-slate-100 hover:text-white border-2 border-slate-600 hover:border-slate-300 text-lg px-6 py-3 transition-transform hover:scale-105"
-            onClick={ (e) => {
-              e.preventDefault();
-              const contactSection = document.querySelector("#resume");
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            } }
+          {/* Description */}
+          <p className="my-6 max-w-xl text-base md:text-lg text-slate-300 leading-relaxed">
+            I'm a <strong className="font-semibold text-white">Junior Web Developer</strong> based in Havana City,
+            blending clean code with bold ideas to create high-performance digital experiences that feel as good as they look.
+          </p>
+
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
           >
-            <a href="#resume">
-              Check My CV <FileText className="ml-2 h-5 w-5" />
-            </a>
-          </Button>
-        </motion.div>
+            <Button
+              asChild
+              size="lg"
+              className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 text-lg px-6 py-3"
+              onClick={(e) => {
+                e.preventDefault();
+                const projects = document.querySelector("#projects");
+                if (projects) {
+                  projects.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              <a href="#projects" className="flex items-center">
+                View Projects <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
 
-        {/* Social Links */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex items-center justify-center gap-4 sm:gap-6"
-        >
-          <SocialIcon
-            href="https://github.com/icarlota99"
-            label="GitHub"
-            icon={<GithubIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
-          />
-          <SocialIcon
-            href="https://linkedin.com/in/icarlota99"
-            label="LinkedIn"
-            icon={<LinkedinIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
-          />
-          <SocialIcon
-            href="mailto:k431999@gmail.com"
-            label="Email"
-            icon={<Mail className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
-          />
-        </motion.div>
-      </div>
-    </motion.section>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="bg-transparent text-slate-100 hover:text-white border-2 border-slate-600 hover:border-slate-300 text-lg px-6 py-3 transition-transform hover:scale-105"
+              onClick={(e) => {
+                e.preventDefault();
+                const resume = document.querySelector("#resume");
+                if (resume) {
+                  resume.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              <a href="#resume">
+                Check My CV <FileText className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+          </motion.div>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex items-center justify-center gap-4 sm:gap-6"
+          >
+            <SocialIcon
+              href="https://github.com/icarlota99"
+              label="GitHub"
+              icon={<GithubIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
+            />
+            <SocialIcon
+              href="https://linkedin.com/in/icarlota99"
+              label="LinkedIn"
+              icon={<LinkedinIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
+            />
+            <SocialIcon
+              href="mailto:k431999@gmail.com"
+              label="Email"
+              icon={<Mail className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
+            />
+          </motion.div>
+        </div>
+      </section>
+    </>
   );
 }
 
