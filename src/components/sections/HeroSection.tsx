@@ -31,7 +31,7 @@ export default function HeroSection() {
     <motion.section
       id="hero"
       style={{ backgroundImage }}
-      className="relative min-h-screen grid place-content-center px-4 py-24 text-foreground -z-50"
+      className="relative min-h-screen grid place-content-center px-4 py-24 text-foreground"
     >
       <div className="relative z-10 flex flex-col items-center text-center">
 
@@ -62,6 +62,13 @@ export default function HeroSection() {
             asChild
             size="lg"
             className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 text-lg px-6 py-3"
+            onClick={ (e) => {
+              e.preventDefault();
+              const contactSection = document.querySelector("#projects");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            } }
           >
             <a href="#projects" className="flex items-center">
               View Projects <ArrowRight className="ml-2 h-5 w-5" />
@@ -73,6 +80,13 @@ export default function HeroSection() {
             variant="outline"
             size="lg"
             className="bg-transparent text-slate-100 hover:text-white border-2 border-slate-600 hover:border-slate-300 text-lg px-6 py-3 transition-transform hover:scale-105"
+            onClick={ (e) => {
+              e.preventDefault();
+              const contactSection = document.querySelector("#resume");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            } }
           >
             <a href="#resume">
               Check My CV <FileText className="ml-2 h-5 w-5" />
@@ -98,7 +112,7 @@ export default function HeroSection() {
             icon={<LinkedinIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
           />
           <SocialIcon
-            href="mailto:icarlota99dev@gmail.com"
+            href="mailto:k431999@gmail.com"
             label="Email"
             icon={<Mail className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />}
           />
