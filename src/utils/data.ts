@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/ICarlota99/Pet-Care-app",
     tools: ["Flask", "SQLAlchemy", "JWT", "JavaScript", "Bootstrap", "Ajax", "SQL"],
     category: "Web",
-    projectStartDate: new Date("2024-12-06"),
+    projectStartDate: new Date("2024-12-23"),
     projectStatus: "Completed",
     liveDemoUrl: "https://youtu.be/3xJQLtmwenM?feature=shared",
     keyFeatures: [
@@ -47,9 +47,9 @@ export const projectsData: Project[] = [
       "Designed and deployed a performant React-based marketing website for a local ice cream business, achieving a Lighthouse score above 90. Integrated WhatsApp API to streamline order submissions, resulting in a 70% reduction in business response time. Implemented a persistent shopping cart leveraging browser localStorage for abandoned cart recovery, enhancing user experience. Delivered a zero-maintenance, serverless solution hosted on Vercel, minimizing backend overhead and operational costs while boosting client orders and improving order management workflows.",
     imageUrl: "https://raw.githubusercontent.com/ICarlota99/ICarlota-portfolio/refs/heads/master/public/images/projects/aloha/home.webp",
     githubUrl: "https://github.com/ICarlota99/heladeriasaloha_madryn",
-    tools: ["React", "Tailwind CSS", "Vercel", "WhatsApp API"],
+    tools: ["React", "JavaScript", "Bootstrap", "Vercel", "WhatsApp API"],
     category: "Web",
-    projectStartDate: new Date("2024-12-15"),
+    projectStartDate: new Date("2025-03-08"),
     projectStatus: "Completed",
     liveDemoUrl: "https://heladeriasaloha-madryn.vercel.app",
     keyFeatures: [
