@@ -59,12 +59,11 @@ export default function Footer() {
             <ul className="space-y-2">
               { [ "Web Development" ].map((item) => (
                 <li key={ item }>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                  <p
+                    className="text-gray-400"
                   >
                     { item }
-                  </a>
+                  </p>
                 </li>
               )) }
             </ul>
@@ -75,13 +74,13 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-2">
-              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-400 hover:text-blue-400 hover:cursor-pointer transition-colors">
                 <Mail className="h-4 w-4 mr-2" /> k431999@gmail.com
               </li>
-              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-400 hover:text-blue-400 hover:cursor-pointer transition-colors">
                 <GithubIcon className="h-4 w-4 mr-2" /> github.com/icarlota99
               </li>
-              <li className="flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+              <li className="flex items-center text-gray-400 hover:text-blue-400 hover:cursor-pointer transition-colors">
                 <LinkedinIcon className="h-4 w-4 mr-2" /> linkedin.com/in/icarlota99
               </li>
             </ul>
@@ -94,36 +93,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
-      {/* <div className="fixed bottom-4 left-4 z-40 flex flex-col space-y-2">
-        <a
-          href="https://github.com/icarlota99"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
-          aria-label="Github Profile"
-        >
-          <GithubIcon className="h-5 w-5 text-gray-300" />
-        </a>
-        <a
-          href="https://linkedin.com/in/icarlota99"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
-          aria-label="LinkedIn Profile"
-        >
-          <LinkedinIcon className="h-5 w-5 text-gray-300" />
-        </a>
-        <a
-          href="mailto:k431999@gmail.com"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="p-2 bg-gray-800 rounded-full shadow-lg hover:bg-cyan-500/30 transition-colors"
-          aria-label="Send Email"
-        >
-          <Mail className="h-5 w-5 text-gray-300" />
-        </a>
-      </div> */}
     </footer>
   )
 }
