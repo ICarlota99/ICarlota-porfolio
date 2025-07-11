@@ -49,7 +49,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <GlassmorphicCard>
               <p className="text-lg text-zinc-300 leading-relaxed lg:text-justify">
-                Hi! I'm <strong className="text-teal-400">Carlota</strong> 
+                Hi! I'm <strong className="text-teal-400">Carlota </strong> 
                 (though my full name is <strong className="font-semibold text-white">
                 Irene Carlota del Cueto Mora</strong>)
               </p>

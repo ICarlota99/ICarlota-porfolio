@@ -38,7 +38,7 @@ export default function HeroSection() {
 
       <section
         id="hero"
-        className="relative z-0 min-h-screen grid place-content-center px-4 py-24 text-foreground"
+        className="relative z-0 min-h-screen grid place-content-center px-4 pt-24 text-foreground"
       >
         <div className="flex flex-col items-center text-center">
 
