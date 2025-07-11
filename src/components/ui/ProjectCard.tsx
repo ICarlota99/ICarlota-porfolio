@@ -46,7 +46,6 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   };
 
   return (
-    <a href={ `/projects/${project.slug}` }>
       <motion.div
         variants={ cardVariants }
         initial="hidden"
@@ -54,7 +53,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         viewport={ { once: true, amount: 0.2 } }
         custom={ index }
         className={ `bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300
-        ease-in-out hover:shadow-teal-500/30 hover:scale-[1.02] flex flex-col h-full group cursor-pointer`}
+        ease-in-out hover:shadow-teal-500/30 hover:scale-[1.02] flex flex-col h-full group`}
       >
         <div className="relative w-full h-56 sm:h-60">
           <img
@@ -126,6 +125,5 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
         </div>
       </motion.div>
-    </a>
   );
 }
